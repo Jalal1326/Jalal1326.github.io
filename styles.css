@@ -1,0 +1,888 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e2dddd;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  width: 100%;
+  background-color: #494b4d;
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #1abc9c;
+}
+
+#app {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Home Page Styles */
+#home-content {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(161, 155, 155);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#home-content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#home-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+#home-content a {
+  color: #5a5f5e;
+  text-decoration: none;
+}
+
+#home-content a:hover {
+  text-decoration: underline;
+}
+
+/* About Us Page Styles */
+#about-content {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about-content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#about-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+#about-content a {
+  color: #262828;
+  text-decoration: none;
+}
+
+#about-content a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Page Styles */
+#contact-content {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#contact-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#contact-form button {
+  padding: 10px 20px;
+  background-color: #1a1c1c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #16a085;
+}
+
+/* Footer Styles */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #090909;
+  color: white;
+}
+
+footer a {
+  color: #fafdfc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #5f6665;
+}
+/* Home Page Specific Styles */
+#hero {
+  background-image: url('apple16.gif'); /* Path to your GIF */
+  height: 300px;
+  background-size: cover;;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 12px 24px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #34495e;
+}
+
+#features {
+  padding: 60px 20px;
+  background-color: rgb(228, 223, 223);
+  text-align: center;
+}
+
+#features h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0e0e0e;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #333;
+}
+
+#testimonials {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+#testimonials h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.testimonial-card p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.testimonial-card .author {
+  font-size: 14px;
+  color: #070707;
+  font-weight: 600;
+}
+
+#cta {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #9a9e9d, #222525);
+  color: white;
+  text-align: center;
+}
+
+#cta h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#cta p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+/* About Us Page Specific Styles */
+#about-hero {
+  background: linear-gradient(135deg, #92a7a2, #808685);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#about-hero h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#about-hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+#our-mission {
+  padding: 60px 20px;
+  background-color: rgb(222, 220, 220);
+  text-align: center;
+}
+
+#our-mission h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#our-mission p {
+  font-size: 16px;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#team {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #d2d7d6, #a5afae);
+  text-align: center;
+}
+
+#team h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2a2b2d;
+  margin-bottom: 40px;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team-card {
+  background-color: rgb(222, 220, 220);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.team-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1d1e1d;
+  margin-bottom: 10px;
+}
+
+.team-card p {
+  font-size: 16px;
+  color: #131212;
+}
+
+#about-cta {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #adb4b2, #232726);
+  color: white;
+  text-align: center;
+}
+
+#about-cta h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#about-cta p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px; 
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Product Page Styles */
+#product-grid {
+  padding: 60px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+#product-grid h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.product-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 15px 0;
+}
+
+.product-card .description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.product-card .price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1abc9c;
+}
+
+/* Product Page Styles */
+#product-grid {
+  padding: 60px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+#product-grid h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.product-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 400px; /* Fixed height for all images */
+  object-fit: cover; /* Ensures images maintain aspect ratio */
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 15px 0;
+}
+
+.product-card .description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.product-card .price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1abc9c;
+}
+
+.product-card .add-to-cart {
+  padding: 10px 20px;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.product-card .add-to-cart:hover {
+  background-color: #16a085;
+}
+
+/* Payment Page Styles */
+#payment-form {
+  width: 90%;
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#payment-form h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #6a7b8b;
+  margin-bottom: 20px;
+}
+
+#payment-form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+#payment-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#payment-form button {
+  padding: 10px 20px;
+  background-color: #14211f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+#payment-form button:hover {
+  background-color: #16a085;
+}
+
+/* Shopping Cart Styles */
+#cart-section {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 250px;
+}
+
+#cart-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+#cart-items {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-item span {
+  font-size: 14px;
+  color: #333;
+}
+
+.cart-item input {
+  width: 40px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.cart-item button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#checkout-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #5b5f5e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+#checkout-button:hover {
+  background-color: #16a085;
+}
+
+/* Payment Page Styles */
+#payment-form {
+  width: 90%;
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#payment-form h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#payment-form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+#payment-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#payment-form button {
+  padding: 10px 20px;
+  background-color: #0a0b0b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+#payment-form button:hover {
+  background-color: #16a085;
+}
+
+/* Product Page Styles */
+#product-grid {
+  padding: 60px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+#product-grid h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.product-card {
+  background-color: #e6e4e4;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 300px; 
+  object-fit: cover; 
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 10px 0;
+}
+
+.product-card .description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  flex-grow: 1; 
+}
+
+.product-card .price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #090a0a;
+  margin-bottom: 15px;
+}
+
+.product-card .add-to-cart {
+  padding: 10px 20px;
+  background-color: #686e6d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.product-card .add-to-cart:hover {
+  background-color: #16a085;
+}
+
+/* Styles specific to the PayPal page */
+  .paypal-header {
+  width: 100%;
+  background-color: #494b4d;
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+body.paypal-page {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f7f7f7;
+}
+
+/* Container for the PayPal payment content */
+.paypal-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+/* Heading styling for the PayPal page */
+.paypal-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #003087; /* PayPal's brand color */
+}
+
+/* PayPal button container */
+.paypal-button-container {
+  margin-top: 20px;
+}
+
+/* styles.css */
+.search-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#searchBar {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#Search-button {
+  padding: 10px 20px;
+  background-color: #0a0b0b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}

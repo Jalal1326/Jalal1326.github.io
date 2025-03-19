@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediaTech</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="newlogo.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <h1>MediaTech</h1>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="index.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="payment.html">Payment</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Shopping Cart Section -->
+  <div id="cart-section">
+    <h3>Shopping Cart</h3>
+    <div id="cart-items"></div>
+    <p>Total: $<span id="cart-total">0.00</span></p>
+    <button id="checkout-button">Checkout</button>
+  </div>
+
+  <!-- Search Bar and Button -->
+  <div class="search-container">
+    <input type="text" id="searchBar" placeholder="Search for products...">
+    <button id="searchButton" onclick="filterProducts()">Search</button>
+  </div>
+
+  <!-- Product Grid -->
+  <section id="product-grid">
+    <h2>Our Products</h2>
+    <div class="products-container">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="s24.webp" alt="Samsung S24 ultra">
+        <h3>Samsung S24 ultra</h3>
+        <p>📱 Display: 6.8" AMOLED 2X, 120Hz, Gorilla Armor</p>
+        <p>⚡ Chipset: Snapdragon 8 Gen 3</p>
+        <p>🔋 Battery: 5000mAh, 45W fast charging</p>
+        <p>💾 Memory: 12GB RAM, up to 1TB storage</p>
+        <p class="price">$1,300</p>
+        <button class="add-to-cart" data-id="1" data-name="Samsung S24 ultra" data-price="1300">Add to Cart</button>
+        <p></p>
+        <a href="product1.html">Full Specifications</a>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card" data-name="Samsung S25">
+        <img src="s25.jpg" alt="Samsung S25">
+        <h3>Samsung S25</h3>
+        <p>📱 Display: 6.9" Dynamic 120Hz adaptive refresh rate</p>
+        <p>⚡ Chipset: Qualcomm Snapdragon 8 Elite</p>
+        <p>🔋 Battery: 5000mAh, 45W wired fast charging</p>
+        <p>💾 Memory: 12GB or 16GB RAM, up to 1TB storage</p>
+        <p class="price">$1,300</p>
+        <button class="add-to-cart" data-id="2" data-name="Samsung S25" data-price="1300">Add to Cart</button>
+        <p></p>
+        <a href="product2.html">Full Specifications</a>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="huawei.jpg" alt="Huawei P60 Pro">
+        <h3>Huawei P60 Pro</h3>
+        <p>📱 Display: 6.67" LTPO OLED, 120Hz, Kunlun Glass</p>
+        <p>⚡ Chipset: Qualcomm Snapdragon 8+ Gen 1 (4G)</p>
+        <p>🔋 Battery: 4815mAh, 88W wired, 50W wireless charging</p>
+        <p>💾 Memory: 8GB/12GB RAM, 256GB/512GB storage</p>
+        <p class="price">$1,200</p>
+        <button class="add-to-cart" data-id="3" data-name="Huawei P60 Pro" data-price="1200">Add to Cart</button>
+        <p></p>
+        <a href="product3.html">Full Specifications</a>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="noed3.jpg" alt="Oneplus Nord 3">
+        <h3>Oneplus Nord 3</h3>
+        <p>📱 Display: 6.74" AMOLED, 120Hz, HDR10+</p>
+        <p>⚡ Chipset: MediaTek Dimensity 9000</p>
+        <p>🔋 Battery: 5000mAh, 80W fast charging</p>
+        <p>💾 Memory: 8GB/16GB RAM, 128GB/256GB storage</p>
+        <p class="price">$500</p>
+        <button class="add-to-cart" data-id="4" data-name="Oneplus Nord 3" data-price="500">Add to Cart</button>
+        <p></p>
+        <a href="product4.html">Full Specifications</a>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <img src="nothing.jpg" alt="Nothing Phone (2)">
+        <h3>Nothing Phone (2)</h3>
+        <p>📱 Display: 6.7" LTPO OLED, 120Hz, HDR10+</p>
+        <p>⚡ Chipset: Qualcomm Snapdragon 8+ Gen 1</p>
+        <p>🔋 Battery: 5000mAh, 45W fast charging</p>
+        <p>💾 Memory: 8GB/12GB RAM, 128GB/256GB/512GB storage</p>
+        <p class="price">$599</p>
+        <button class="add-to-cart" data-id="5" data-name="Nothing Phone (2)" data-price="599">Add to Cart</button>
+        <p></p>
+        <a href="product5.html">Full Specifications</a>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <img src="iphone.jpg" alt="Iphone 15">
+        <h3>Iphone 15</h3>
+        <p>📱 Display: 6.1" Super Retina XDR OLED, 60Hz, Ceramic Shield</p>
+        <p>⚡ Chipset: Apple A16 Bionic</p>
+        <p>🔋 Battery: ~3349mAh, 20W wired, 15W MagSafe wireless charging</p>
+        <p>💾 Memory: 12GB RAM, up to 1TB storage</p>
+        <p></p>
+        <p class="price">$799</p>
+        <button class="add-to-cart" data-id="6" data-name="Iphone 15" data-price="799">Add to Cart</button>
+        <p></p>
+        <a href="product6.html">Full Specifications</a>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product-card">
+        <img src="mate.jpg" alt="Huawei Mate 70 Pro">
+        <h3>Huawei Mate 70 Pro</h3>
+        <p>📱 Display: 6.82" OLED, 1-120Hz LTPO adaptive refresh rate</p>
+        <p>⚡ Chipset: HiSilicon Kirin 9000S (7nm)</p>
+        <p>🔋 Battery: 5000mAh (typical), 88W wired fast charging</p>
+        <p>💾 Memory: 12GB RAM, storage options: 256GB, 512GB, 1TB</p>
+        <p class="price">$1,300</p>
+        <button class="add-to-cart" data-id="7" data-name="Huawei Mate 70 Pro" data-price="1300">Add to Cart</button>
+        <p></p>
+        <a href="product7.html">Full Specifications</a>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="product-card">
+        <img src="OnePlusz.webp" alt="OnePlus 8 Pro">
+        <h3>OnePlus 8 Pro</h3>
+        <p>📱 Display: 6.8" AMOLED 2X, 120Hz, Gorilla Armor</p>
+        <p>⚡ Chipset: Snapdragon 8 Gen 3</p>
+        <p>🔋 Battery: 5000mAh, 45W fast charging</p>
+        <p>💾 Memory: 12GB RAM, up to 1TB storage</p>
+        <p></p>
+        <p></p>
+        <p class="price">$800</p>
+        <button class="add-to-cart" data-id="8" data-name="OnePlus 8 Pro" data-price="800">Add to Cart</button>
+        <p></p>
+        <a href="product8.html">Full Specifications</a>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="product-card">
+        <img src="iphone16e.jpg" alt="Iphone 16e">
+        <h3>Iphone 16e</h3>
+        <p>📱 Display: 6.1" OLED, 60Hz</p>
+        <p>⚡ Chipset: Apple A18</p>
+        <p>🔋 Battery: Up to 52 hours of general usage</p>
+        <p>💾 Memory: 8GB RAM, 128GB storage</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p class="price">$599</p>
+        <button class="add-to-cart" data-id="9" data-name="Iphone 16e" data-price="599">Add to Cart</button>
+        <p></p>
+        <a href="product9.html">Full Specifications</a>
+      </div>
+
+      <!-- Product 10 -->
+      <div class="product-card">
+        <img src="zfold.jpg" alt="Samsung Galaxy Z fold">
+        <h3>Samsung Galaxy Z fold</h3>
+        <p>📱 Main Display: 7.6" Dynamic AMOLED 2X, 120Hz, 2208 x 1768 resolution</p>
+        <p>⚡ Processor: Qualcomm Snapdragon 8 Gen 2</p>
+        <p>🔋 Battery: 4400mAh, 25W wired, 12W wireless</p>
+        <p>💾 Memory & Storage: 12GB RAM, 256GB, 512GB, or 1TB</p>
+        <p class="price">$1499</p>
+        <button class="add-to-cart" data-id="10" data-name="Samsung Galaxy Z fold" data-price="1499">Add to Cart</button>
+        <p></p>
+        <a href="product10.html">Full Specifications</a>
+      </div>
+
+      <!-- Product 11 -->
+      <div class="product-card">
+        <img src="oneplus11.jpg" alt="OnePlus 11">
+        <h3>OnePlus 11</h3>
+        <p>📱 Display: 6.8" AMOLED 2X, 120Hz, Gorilla Armor</p>
+        <p>⚡ Chipset: Snapdragon 8 Gen 3</p>
+        <p>🔋 Battery: 5000mAh, 45W fast charging</p>
+        <p>💾 Memory: 12GB RAM, up to 1TB storage</p>
+        <p class="price">$699</p>
+        <button class="add-to-cart" data-id="11" data-name="OnePlus 11" data-price="699">Add to Cart</button>
+        <p></p>
+        <a href="product11.html">Full Specifications</a>
+      </div>
+
+      <!-- Product 12 -->
+      <div class="product-card">
+        <img src="oneplus8.jpeg" alt="OnePlus 8">
+        <h3>Oneplus8</h3>
+        <p>📱 Display: 6.55" Fluid AMOLED, 90Hz, FHD+</p>
+        <p>⚡ Chipset: Qualcomm Snapdragon 865</p>
+        <p>🔋 Battery: 4300mAh, 30W Warp Charge</p>
+        <p>💾 Memory: 8GB/12GB RAM, 128GB/256GB</p>
+        <p class="price">$699</p>
+        <button class="add-to-cart" data-id="12" data-name="OnePlus 8" data-price="699">Add to Cart</button>
+        <p></p>
+        <a href="product12.html">Full Specifications</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MediaTech. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Cart Functionality -->
+  <script>
+    let cart = [];
+
+    function updateCart() {
+      const cartItems = document.getElementById('cart-items');
+      const cartTotal = document.getElementById('cart-total');
+      cartItems.innerHTML = '';
+      let total = 0;
+
+      cart.forEach((item, index) => {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'cart-item';
+        itemDiv.innerHTML = `
+          <span>${item.name} ($${item.price})</span>
+          <input type="number" min="1" value="${item.quantity}" data-index="${index}" class="quantity-input">
+          <button class="remove-item" data-index="${index}">Remove</button>
+        `;
+        cartItems.appendChild(itemDiv);
+        total += item.price * item.quantity;
+      });
+
+      cartTotal.textContent = total.toFixed(2);
+    }
+
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', () => {
+        const productId = button.getAttribute('data-id');
+        const productName = button.getAttribute('data-name');
+        const productPrice = parseFloat(button.getAttribute('data-price'));
+
+        const existingItem = cart.find(item => item.id === productId);
+        if (existingItem) {
+          existingItem.quantity += 1;
+        } else {
+          cart.push({ id: productId, name: productName, price: productPrice, quantity: 1 });
+        }
+
+        updateCart();
+      });
+    });
+
+    document.getElementById('cart-items').addEventListener('click', (e) => {
+      if (e.target.classList.contains('remove-item')) {
+        const index = e.target.getAttribute('data-index');
+        cart.splice(index, 1);
+        updateCart();
+      }
+    });
+
+    document.getElementById('cart-items').addEventListener('change', (e) => {
+      if (e.target.classList.contains('quantity-input')) {
+        const index = e.target.getAttribute('data-index');
+        cart[index].quantity = parseInt(e.target.value);
+        updateCart();
+      }
+    });
+
+    document.getElementById('checkout-button').addEventListener('click', () => {
+      if (cart.length > 0) {
+        window.location.href = 'payment.html';
+      } else {
+        alert('Your cart is empty!');
+      }
+    });
+
+    // Search Functionality
+    function filterProducts() {
+      const searchInput = document.getElementById('searchBar').value.toLowerCase();
+      const products = document.querySelectorAll('.product-card');
+
+      console.log("Search Input:", searchInput); // Debugging
+
+      let foundMatch = false; // Track if any product matches the search
+
+      products.forEach(product => {
+        const productName = product.getAttribute('data-name').toLowerCase();
+        console.log("Product Name:", productName); // Debugging
+
+        if (productName.includes(searchInput)) {
+          product.style.display = 'block'; // Show the product
+          foundMatch = true; // At least one product matches
+        } else {
+          product.style.display = 'none'; // Hide the product
+        }
+      });
+
+      // Show a message if no products match the search
+      if (!foundMatch) {
+        alert("No products found matching your search.");
+      }
+    }
+  </script>
+</body>
+</html>
